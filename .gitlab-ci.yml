@@ -1,0 +1,16 @@
+stages:
+  - build
+
+build:
+  tags:
+    - docker
+    - npm
+  stage: build
+  script:
+    - buildTool/build.sh
+  artifacts:
+    untracked: false
+    when: on_success
+    expire_in: "30 days"
+    paths:
+      - "renderer/*"

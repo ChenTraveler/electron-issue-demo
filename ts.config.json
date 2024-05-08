@@ -1,0 +1,11 @@
+{
+  "include": [
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.jsx",
+    "src/**/*.vue",
+    "./src/renderer/auto-imports.d.ts", 
+    "./src/renderer/components.d.ts"
+  ]
+}
